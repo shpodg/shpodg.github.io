@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drawing board</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="paint.css">
+	
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+ 
+</head>
+<body>
+<header id="head">
+	<p>HTML5在线画板</p> 
+</header>
+<section id="draw_board">
+	<ul id="menu">
+		<li id="function">图像<hr/>
+			<ul>
+				<li id="save_pic">
+					<form id="form" action="downimg.php" method="post">
+						<input type="hidden" id="data" name="data" value=""></input>
+						<button type="button" onclick="Saveing()">保存图片</button>
+					</form>
+				</li>
+				<li id="clear_pic"><button onclick="Clear()">清空画板</button></li>
+
+			</ul>
+		</li>
+		<li id="tools">工具<hr/>
+			<ul>
+				<li id="brush" onclick="Brush(0)"><img src="images/Brush.png"></li>
+				<li id="eraser" onclick="Eraser(1)"><img src="images/Eraser.png"></li>
+				<li id="paint" onclick="Paint(2)"><img src="images/Paint.png"></li>
+				<li id="straw" onclick="Straw(3)"><img src="images/Straw.png"></li>
+				<li id="text" onclick="Text(4)"><img src="images/text.png"></li>
+				<li id="magnifier" onclick="Magnifier(5)"><img src="images/Magnifier.png"></li>
+			</ul>
+		</li>
+		<li id="shape">形状<hr/>
+			<ul>
+				<li id="line" onclick="Line(6)"><img src="images/line.png"></li>
+				<li id="rect" onclick="Rect(7)"><img src="images/rect.png"></li>
+				<li id="arc" onclick="Arc(8)"><img src="images/arc.png"></li>
+				<li id="poly" onclick="Poly(9)"><img src="images/poly.png"></li>
+				<li id="rectfill" onclick="Rectfill(10)"><img src="images/rectfill.png"></li>
+				<li id="arcfill" onclick="Arcfill(11)"><img src="images/arcfill.png"></li>
+			</ul>
+		</li>
+		<li id="line">线宽<hr/>
+			<ul>
+				<li id="line1px" onclick="Line1px(0)"><img src="images/line1px.png"></li>
+				<li id="line3px" onclick="Line3px(1)"><img src="images/line3px.png"></li>
+				<li id="line5px" onclick="Line5px(2)"><img src="images/line5px.png"></li>
+				<li id="line8px" onclick="Line8px(3)"><img src="images/line8px.png"></li>
+
+			</ul>
+		</li>
+		<li id="color">颜色<hr/>
+			<ul>
+				<li id="red" onclick="Red()"></li>
+				<li id="green" onclick="Green()"></li>
+				<li id="blue" onclick="Blue()"></li>
+				<li id="yellow" onclick="Yellow()"></li>
+				<li id="white" onclick="White()"></li>
+				<li id="black" onclick="Black()"></li>
+				<li id="pink" onclick="Pink()"></li>
+				<li id="purple" onclick="Purple()"></li>
+				<li id="cyan" onclick="Cyan()"></li>
+				<li id="orange" onclick="Orange()"></li>
+			</ul>
+		</li>
+	</ul>
+	<canvas id="mycanvas" width="880px" height="380px" style="cursor:crosshair;"></canvas>
+</section>
+<footer id="foot">
+	<small>版权所有 jyffly@qq.com</small>
+</footer>
+<!--很常见的一个错误：getElementById ()只有在文档加载,完成成功，才能获取,所以，引入canvas.js要放在后面。-->
+<script type="text/javascript" src="canvas.js"></script>
+</body>
+</html>

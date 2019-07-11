@@ -1,0 +1,30 @@
+*{padding: 0;margin: 0;}
+body{background-color: #abcdef;}
+#head{width: 900px;height: 80px;margin:0 auto;}
+#head p{font-size: 40px; text-align: center;line-height: 80px;}
+#draw_board{width: 900px;height: 560px;background: #808080;margin: 0 auto;padding-top: 10px;}
+#menu{width: 880px;height:160px;background: #ccc;margin-left: 10px;}
+#menu li{float: left; list-style-type: none;height: 160px; width:175px;
+	border-right:1px solid red;text-align: center;}
+#function ul li{ width:170px; height:35px;border:0 ; line-height:35px;}
+#save_pic button{background:#808080;}
+#clear_pic button{background:#808080;}
+#tools ul,#shape ul,#line ul,#color ul {padding:10px 15px;}
+#tools ul li,#shape ul li,#line ul li{width:45px; height:25px;border:1px black solid ; line-height:25px;margin-bottom: 10px;}
+#tools ul li img,#shape ul li img{width:25px; height:25px;}
+#line ul li{width: 150px;height: 25px;border:0;line-height:25px;margin-bottom: 3px; }
+#line ul li img{width:150px;height: 8px;}
+#color ul li{width:25px; height:25px;border:1px black solid ; line-height:25px;margin-bottom: 10px;}
+#red{background:red;}
+#green{background:green;}
+#blue{background:blue;}
+#yellow{background:yellow;}
+#white{background:white;}
+#black{background:black;}
+#pink{background:pink;}
+#purple{background:purple;}
+#cyan{background:cyan;}
+#orange{background:orange;}
+#mycanvas{background: #fff;margin:10px;}
+#foot{width: 900px;height: 60px;margin: 0 auto;}
+#foot small{text-align: center; display: block;}
