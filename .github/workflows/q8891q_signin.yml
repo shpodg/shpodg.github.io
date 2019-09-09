@@ -1,0 +1,30 @@
+name: Docker Image CI
+
+on:
+  schedule:
+  - cron: 0/10 * * * * ? 
+
+jobs:
+
+  signin:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: q8891q signin 
+      run: >
+       curl 'https://www.q8891q.ml/user/checkin' 
+       -X POST -H 'sec-fetch-mode: cors' 
+       -H 'cookie: __cfduid=d2b7d4e3049189ca96ff7a339cb2db4f21567411971; 
+       _ga=GA1.2.1086928304.1567412008; uid=3747; email=shpodg%40gmail.com; 
+       key=2ed095c468975f878feabb403ad4fbbcf3b0dfa5fa48b; 
+       ip=28a7a04052ad05eee9733fa6a97fc697; expire_in=1568266597; 
+       _gid=GA1.2.722726641.1567855766; _gat=1' 
+       -H 'origin: https://www.q8891q.ml' 
+       -H 'accept-encoding: gzip, deflate, br' 
+       -H 'accept-language: zh-CN,zh;q=0.9' 
+       -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36' 
+       -H 'accept: application/json, text/javascript, */*; q=0.01' 
+       -H 'referer: https://www.q8891q.ml/user' 
+       -H 'authority: www.q8891q.ml' -H 'x-requested-with: XMLHttpRequest' 
+       -H 'sec-fetch-site: same-origin' -H 'content-length: 0' --compressed
