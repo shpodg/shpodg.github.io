@@ -37,7 +37,7 @@ author:
   type      : # "person" (default), "organization"
   name      : shpodg
   url       : https://shpodg.github.io
-  avatar    : /images/avatar.png # path or url of avatar image (square)
+  avatar    : /assets/images/avatar.png # path or url of avatar image (square)
   bio       : developer, Spring kotlin Reactive Programing Coroutines docker
   email     : shpodg@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
@@ -129,7 +129,7 @@ comments:
   gitalk:
     clientID    : 6631b3efdc917bc9a1ea # GitHub Application Client ID
     clientSecret: 21909143f9a9d49d736f59364ca890cde6faef01 # GitHub Application Client Secret
-    repository  : shpodg/shpodg.github.io # GitHub repo
+    repository  : shpodg.github.io # GitHub repo
     owner       : shpodg # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
